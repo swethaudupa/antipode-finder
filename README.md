@@ -20,9 +20,9 @@ function getAntipodeLng(lng) {
 }
 
 ## Stack used
-React-leaflet - React components for 🍃 Leaflet maps
-leaflet-geosearch - For searching country, city, address, zip code or geographical coordinates
-leaflet-control-geocoder - To get address from  lat lng
+React-leaflet - React components for 🍃 Leaflet maps<br />
+leaflet-geosearch - For searching country, city, address, zip code or geographical coordinates<br />
+leaflet-control-geocoder - To get address from  lat lng<br />
 create-react-app - ReactJS Starter kit
 
 ## Getting started
