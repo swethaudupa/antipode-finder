@@ -1,4 +1,20 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project aims at finding the antipodes (the other side of the world) of any place on Earth.
+
+The Left Map presents the place for which you want to find the antipodal point. The Right Map shows the antipodal point for the selected location on the left map.
+Type in the search box the country, city, address, zip code or geographical coordinates, hit enter to see the other side of the world which will be represented on Right Map.
+
+You can check the antipode of your current location by clicking on the gps icon on the bottom right of the left map.
+
+Both maps can be moved and zoomed in and out. Below each map you can view the selected location address and geographical coordinates (latitude and longitude).
+
+Antipode of any location is calculated using the below Javascript helper function:
+function getAntipodeLat(lat) {
+  return lat * -1;
+}
+
+function getAntipodeLng(lng) {
+  return lng > 0 ? lng - 180 : lng + 180;
+}
 
 ## Available Scripts
 
