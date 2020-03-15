@@ -44,20 +44,25 @@ function App() {
   };
 
   return (
-    <div className="mapContainer">
-      <MapComponent
-        onGetLocationClick={onGetLocationClick}
-        mapTitle="Your Location"
-        center={currentLocation}
-        isCurrentLocation={true}
-        handleViewportChanged={handleViewportChanged}
-      />
-      <MapComponent
-        mapTitle="Antipodes Location"
-        center={antipodeLocation}
-        isCurrentLocation={false}
-      />
-    </div>
+    <>
+      <header className="headerStyle">
+        <h1>Antipode Finder</h1>
+      </header>
+      <div className="mapContainer">
+        <MapComponent
+          onGetLocationClick={onGetLocationClick}
+          mapTitle="Your Location"
+          center={currentLocation}
+          isCurrentLocation={true}
+          handleViewportChanged={handleViewportChanged}
+        />
+        <MapComponent
+          mapTitle="Antipodes Location"
+          center={antipodeLocation}
+          isCurrentLocation={false}
+        />
+      </div>
+    </>
   );
 }
 
