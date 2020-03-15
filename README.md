@@ -1,3 +1,6 @@
+# Antipode Finder
+
+## About the project
 This project aims at finding the antipodes (the other side of the world) of any place on Earth.
 
 The Left Map presents the place for which you want to find the antipodal point. The Right Map shows the antipodal point for the selected location on the left map.
@@ -16,7 +19,13 @@ function getAntipodeLng(lng) {
   return lng > 0 ? lng - 180 : lng + 180;
 }
 
-## Available Scripts
+## Stack used
+React-leaflet - React components for 🍃 Leaflet maps
+leaflet-geosearch - For searching country, city, address, zip code or geographical coordinates
+leaflet-control-geocoder - To get address from  lat lng
+create-react-app - ReactJS Starter kit
+
+## Getting started
 
 In the project directory, you can run:
 
