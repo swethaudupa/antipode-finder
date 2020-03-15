@@ -11,14 +11,16 @@ You can check the antipode of your current location by clicking on the gps icon 
 Both maps can be moved and zoomed in and out. Below each map you can view the selected location address and geographical coordinates (latitude and longitude).
 
 Antipode of any location is calculated using the below Javascript helper function:
+```js
 function getAntipodeLat(lat) {
   return lat * -1;
 }
-
+```
+```js
 function getAntipodeLng(lng) {
   return lng > 0 ? lng - 180 : lng + 180;
 }
-
+```
 ## Stack used
 React-leaflet - React components for 🍃 Leaflet maps<br />
 leaflet-geosearch - For searching country, city, address, zip code or geographical coordinates<br />
